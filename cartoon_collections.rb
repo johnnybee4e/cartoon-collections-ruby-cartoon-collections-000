@@ -11,6 +11,10 @@ def long_planeteer_calls(words)
 end
 
 def find_the_cheese(food)
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_types = ["cheddar", "gouda", "camembert", "swiss"]
   cheese_types.find { |cheese| food.include?(cheese) }
+end
+
+def words_with_b(array)
+  array.select { |word| word.starts_with?("b") }
 end
